@@ -102,11 +102,7 @@ if __name__ == "__main__":
     user_args = read_user_cli_args()
     query_url = weather_query(user_args.city,user_args.imperial)
     weather_data = get_weather_data(query_url)
-    # print(
-    #     f"{weather_data['name']}:"
-    #     f"{weather_data['weather'] [0] ['description']}"
-    #     f"({weather_data['main'] ['temp']})"
-    # )
+   
 
 
 def display_weather_info(weather_data,imperial=False):
@@ -154,7 +150,7 @@ def _select_weather_display_params(weather_id):
     else:  # In case the API adds new weather codes
         display_params = ("🌈", style.RESET)
     return display_params
-    
+
 
 
 if __name__ == "__main__":
