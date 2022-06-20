@@ -154,6 +154,7 @@ def _select_weather_display_params(weather_id):
     else:  # In case the API adds new weather codes
         display_params = ("🌈", style.RESET)
     return display_params
+    
 
 
 if __name__ == "__main__":
