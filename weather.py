@@ -102,7 +102,8 @@ if __name__ == "__main__":
     user_args = read_user_cli_args()
     query_url = weather_query(user_args.city,user_args.imperial)
     weather_data = get_weather_data(query_url)
-   
+
+
 
 
 def display_weather_info(weather_data,imperial=False):
@@ -156,3 +157,4 @@ def _select_weather_display_params(weather_id):
 if __name__ == "__main__":
 
     display_weather_info(weather_data,user_args.imperial)
+
